@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="img/i.png" sizes="32x32" />
+    <title>Hospital</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/Trangchu.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="js/myjquery.js"></script>
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <div id="main-nav">
+            <div id="Topicon"><img src="img/favicon.gif">Name hospital</div>
+            <div id="nav-email"> <span><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></span> EMAIL:hospital@gmail.com </div>
+            <div id="nav-phone"> <span><a href="#"><i class="fa fa-phone-square" aria-hidden="true"></i></a></span> Tổng đài:115 </div>
+           
+            <div id="nav-dangnhap">
+                <a class="btn btn-outline-primary w3-center" href="" data-target="#ModalCenter" data-toggle="modal">Login</a>   
+                  <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenter" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                     <div>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="register">&nbsp;</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            </div>
+
+                        <div class="box">
+                            <div class="form loginBox" style="display: block;">
+                                <form method="post" action="#" id="register">
+                                    <div class="form-group">
+                                        <label for="username" style="text-align:left">Username(*)</label>
+                                        <input class="text" type="text" name="username" id="username" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password" style="text-align:left">Password(*)</label>
+                                        <input class="text" type="password" name="password" id="password" />
+                                    </div>
+                                    <div class="form-group" style="text-align:left">
+                                            <p><label id="bottom"></label><input type="submit" name="action" id="submit" value="Login" /></p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+
+                        <div class="box">
+                                <div class="content registerBox" style="display: none;">
+                                    <form method="post" action="#" id="register">
+                                        <div class="form-group">
+                                            <label for="username" style="text-align:left">Username(*)</label>
+                                            <input class="text" type="text" name="username" id="username" />
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="password" style="text-align:left">Password(*)</label>
+                                            <input class="text" type="password" name="password" id="password" />
+                                        </div>
+                                        
+                                            <div class="form-group">
+                                            <label for="confirm_pass" style="text-align:left">Nhập lại Password(*)</label>
+                                            <input class="text" type="password" name="confirm_pass" id="confirm_pass" />
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="fullname" style="text-align:left">Fullname(*)</label>
+                                            <input class="text" type="text" name="firstname" id="firstname" />
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="email" style="text-align:left">E-mail(*)</label>
+                                            <input class="text" type="text" name="email" id="email" />
+                                        </div> 
+                                            
+                                        <div class="form-group">
+                                            <label for="phone" style="text-align:left">Mobile number(*)</label>
+                                            <input class="text" type="text" name="phone" id="phone" />
+                                        </div>
+                                        
+                                        <div class="form-group" style="text-align:left">
+                                        <p><label id="bottom"></label><input type="submit" name="action" id="submit" value="Registration" /></p>
+                                        </div>
+                                    </form>
+                                </div>
+                        </div>
+
+                        <div class="modal-footer">
+                                <div class="forgot login-footer" style="display: block;"> <span> <a href="javascript: showRegisterForm();">Tạo tài khoản mới?</a> </span> </div>
+                                <div class="forgot register-footer" style="display: none;"> <span>Bạn có tài khoản rồi?</span> <a href="javascript: showLoginForm();">Đăng nhập</a> </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    </div>
+                    </div>
+                </div>
+        </div>
+         
+        <div class="wrapper-nav" id="main-menu-tto">
+            <nav class="nav-main">
+                <ul class="clearfix">
+                    <li><a title="Trang chủ" href="Trangchu.html">Trang chủ</a></li>
+                    <li><a title="Giới thiệu" href="GioiThieu.html">Giới thiệu</a></li>
+                    <li><a title="Dịch vụ" href="DichVu.html">Dịch vụ</a></li>
+                    <li><a title="Đội ngũ bác sĩ" href="DoiNguBacSi.html">Đội ngũ bác sĩ</a></li>
+                    <li><a title="Forum" href="Forum.html">Forum</a> </li>
+                    <li><a title="Tin tức" href="TinTuc.html">Tin tức</a></li>
+                    <li><a title="Liên hệ" href="LienHe.html">Liên hệ</a></li>
+                    <div id="search-box">
+                        <form id="search-form">
+                            <input type="text" placeholder="Search" id="textsearch"/>
+                            <button type="submit" id="search-button"> </button>
+                        </form>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="footer">
+                <div class="FT">
+                    <ul>
+                        <li> <b>Name Hospital</b></li>
+                        <li> Mang tới sự hài lòng về dịch vụ</li>
+                        <li> Uy tín- Bảo Mật- An Toàn</li>
+                        <li> <span><a href="#"> <i class="fa fa-map-marker" aria-hidden="true"></i></a></span> 227 Nguyễn Văn Cừ, Phường 4, Quận 5, Hồ Chí Minh</li>
+                        <li> <span><a href="#"> <i class="fa fa-phone" aria-hidden="true"></i></a></span>  028 3835 3193</li>
+                        <li> <span><a href="#"> <i class="fa fa-envelope" aria-hidden="true"></i></a></span>  Hospital@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="FT">
+                    <ul>
+                        <li> <b>Chuyên Khoa</b></li>
+                        <li> Khoa răng miệng</li>
+                        <li> Khoa tim mạch</li>
+                        <li> Khoa hô hấp</li>
+                        <li> Khoa thần kinh</li>
+                        <li> Khoa xương khớp</li>
+                        <li> Khoa phụ sản</li>
+                        <li> Khoa chấn thương chỉnh hình</li>
+                    </ul>
+                </div>
+                <div class="FT">
+                    <ul>
+                        <li> <b>Tin tức nổi bậc</b></li>
+                        <li> Giảm cân hiệu quả với trái cây</li>
+                        <li> Tập thể dục để cải thiện sức khỏe</li>
+                        <li> Cách chữa bệnh đau khớp</li>
+                        <li> Cách phòng tránh các bệnh tai biến</li>
+                        <hr  width="100%" align="center" /> 
+                        <span><a href="facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></span>
+                        <span><a href="google.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a></span>
+                        <span><a href="twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(window).load(function() {
+                if ($('.wrapper-nav').length > 0) {
+                    var _top = $('.wrapper-nav').offset().top - parseFloat($('.wrapper-nav').css('marginTop').replace(/auto/, 0));
+                    $(window).scroll(function(evt) {
+                        var _y = $(this).scrollTop();
+                        if (_y > _top) {
+                            $('.wrapper-nav').addClass('fixed');
+                            $('.main-1').css("margin-top", "30px")
+                        } else {
+                            $('.wrapper-nav').removeClass('fixed');
+                            $('.main-1').css("margin-top", "0")
+                        }
+                    })
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
+
